@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\AnswersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\StartPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\StudentsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SubjectsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\TestsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StyleWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\AnswersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\StudentsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SubjectsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\TestsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Skins\BlueSkinDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StyleWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\DarkThemeDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Skins\GreenSkinDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\LightThemeDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Skins\PurpleSkinDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Skins\MagentaSkinDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\StartPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Skins\YellowSkinDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,78 @@
+﻿<Window x:Class="DiplomAnswerProject.StyleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiplomAnswerProject"
+        mc:Ignorable="d"
+        Title="Стиль" Height="450" Width="600" Style="{DynamicResource WindowStyle}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+    <RowDefinition Height="4*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="5*"/>
+    <RowDefinition Height="2*"/>
+    <RowDefinition Height="20"/>
+    </Grid.RowDefinitions>
+
+        <TextBlock Text="Theme:" Grid.Column="1" Grid.Row="1" Style="{DynamicResource TextBlockStyle}"/>
+        <TextBlock Text="Skin:" Grid.Column="1" Grid.Row="3" Style="{DynamicResource TextBlockStyle}"/>
+
+    <RadioButton x:Name="RadioLight" GroupName="Theme" Grid.Column="1" Grid.Row="2" Checked="RadioLight_Checked">
+        <RadioButton.Content>
+                <TextBlock Text="Light" Style="{DynamicResource TextBlockStyle}"/>
+        </RadioButton.Content>
+    </RadioButton>
+        <RadioButton x:Name="RadioDark" GroupName="Theme" Grid.Column="3" Grid.Row="2" Checked="RadioDark_Checked">
+        <RadioButton.Content>
+                <TextBlock Text="Dark" Style="{DynamicResource TextBlockStyle}"/>
+        </RadioButton.Content>
+    </RadioButton>
+
+        <RadioButton x:Name="RadioBlue" GroupName="Skin" Grid.Column="1" Grid.Row="4" Checked="RadioBlue_Checked">
+        <RadioButton.Content>
+                <TextBlock Text="Blue" Style="{DynamicResource TextBlockStyle}"/>
+        </RadioButton.Content>
+    </RadioButton>
+        <RadioButton x:Name="RadioGreen" GroupName="Skin" Grid.Column="2" Grid.Row="4" Checked="RadioGreen_Checked">
+        <RadioButton.Content>
+                <TextBlock Text="Green" Style="{DynamicResource TextBlockStyle}"/>
+        </RadioButton.Content>
+    </RadioButton>
+        <RadioButton x:Name="RadioPurple" GroupName="Skin" Grid.Column="3" Grid.Row="4" Checked="RadioPurple_Checked">
+        <RadioButton.Content>
+                <TextBlock Text="Purple" Style="{DynamicResource TextBlockStyle}"/>
+        </RadioButton.Content>
+    </RadioButton>
+        <RadioButton x:Name="RadioYellow" GroupName="Skin" Grid.Column="4" Grid.Row="4" Checked="RadioYellow_Checked">
+        <RadioButton.Content>
+                <TextBlock Text="Yellow" Style="{DynamicResource TextBlockStyle}"/>
+        </RadioButton.Content>
+    </RadioButton>
+        <RadioButton x:Name="RadioMagenta" GroupName="Skin" Grid.Column="5" Grid.Row="4" Checked="RadioMagenta_Checked">
+        <RadioButton.Content>
+                <TextBlock Text="Magenta" Style="{DynamicResource TextBlockStyle}"/>
+        </RadioButton.Content>
+    </RadioButton>
+
+    <Button x:Name="StyleCancelButton" Content="OK" Height="48" Width="200" Grid.Row="5" Grid.ColumnSpan="7" BorderBrush="{x:Null}" IsCancel="True" Style="{DynamicResource ButtonStyle}">
+        <Button.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="30"/>
+            </Style>
+        </Button.Resources>
+    </Button>
+    </Grid>
+
+</Window>
